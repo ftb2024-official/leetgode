@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	fmt.Println(test.ContainsNearbyDuplicate([]int{1, 2, 3, 1}, 3))
-	fmt.Println(test.ContainsNearbyDuplicate([]int{1, 0, 1, 1}, 1))
-	fmt.Println(test.ContainsNearbyDuplicate([]int{1, 2, 3, 1, 2, 3}, 2))
+	fmt.Println(test.GroupAnagrams([]string{"eat", "tea", "tan", "ate", "nat", "bat"}))
+	// fmt.Println(test.GroupAnagrams([]string{""}))
+	// fmt.Println(test.GroupAnagrams([]string{"a"}))
 }

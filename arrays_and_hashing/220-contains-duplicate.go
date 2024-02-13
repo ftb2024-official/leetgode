@@ -33,4 +33,30 @@ func ContainsNearbyAlmostDuplicate(nums []int, indexDiff, valueDiff int) bool {
 		(valueDiff < 0 || valueDiff > int(math.Pow10(9))) {
 		return false
 	}
+
+	seen := make(map[int]int)
+
+	for idx, num := range nums {
+		bucket := num / (valueDiff + 1)
+
+		if _, exists := seen[bucket]; exists {
+			return true
+		}
+
+		if val, exists := seen[bucket-1]; exists && math.Abs(float64(num-val)) <= float64(valueDiff) {
+			return true
+		}
+
+		if val, exists := seen[bucket+1]; exists && math.Abs(float64(num-val)) <= float64(valueDiff) {
+			return true
+		}
+
+		seen[bucket] = num
+
+		if idx >= indexDiff {
+			delete(seen, nums[idx-indexDiff]/(valueDiff+1))
+		}
+	}
+
+	return false
 }
