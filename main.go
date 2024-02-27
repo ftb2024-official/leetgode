@@ -6,7 +6,6 @@ import (
 )
 
 func main() {
-	fmt.Println(test.GroupAnagrams([]string{"eat", "tea", "tan", "ate", "nat", "bat"}))
-	// fmt.Println(test.GroupAnagrams([]string{""}))
-	// fmt.Println(test.GroupAnagrams([]string{"a"}))
+	fmt.Println(test.RemoveAnagrams([]string{"abba", "baba", "bbaa", "cd", "cd"}))
+	fmt.Println(test.RemoveAnagrams([]string{"a", "b", "c", "d", "e"}))
 }
