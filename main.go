@@ -6,6 +6,6 @@ import (
 )
 
 func main() {
-	fmt.Println(test.RemoveAnagrams([]string{"abba", "baba", "bbaa", "cd", "cd"}))
-	fmt.Println(test.RemoveAnagrams([]string{"a", "b", "c", "d", "e"}))
+	fmt.Println(test.MinimumOperations([]int{1, 5, 0, 3, 5}))
+	fmt.Println(test.MinimumOperations([]int{0}))
 }
