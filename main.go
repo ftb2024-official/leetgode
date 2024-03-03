@@ -6,6 +6,6 @@ import (
 )
 
 func main() {
-	fmt.Println(test.MinimumOperations([]int{1, 5, 0, 3, 5}))
-	fmt.Println(test.MinimumOperations([]int{0}))
+	fmt.Println(test.MaxOperations([]int{1, 2, 3, 4}, 5))
+	fmt.Println(test.MaxOperations([]int{3, 1, 3, 4, 3}, 6))
 }
