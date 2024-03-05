@@ -1,5 +1,6 @@
 *.exe
 *.tmp
 *.log
+main.go
 tmp/
 .vscode/
