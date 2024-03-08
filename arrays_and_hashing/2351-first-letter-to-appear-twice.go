@@ -20,7 +20,21 @@ Example 2:
 
 package arraysandhashing
 
-func RepeatedCharacter(s string) rune {
+func RepeatedCharacter(s string) byte {
+	seen := map[rune]struct{}{}
+
+	for _, char := range s {
+		if _, ok := seen[char]; ok {
+			return byte(char)
+		}
+
+		seen[char] = struct{}{}
+	}
+
+	return byte(0)
+}
+
+func RepeatedCharacter_2(s string) rune {
 	seen := map[rune]bool{}
 
 	for _, char := range s {
