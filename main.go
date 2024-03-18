@@ -6,6 +6,6 @@ import (
 )
 
 func main() {
-	fmt.Println(test.FindKDistantIndices([]int{3, 4, 9, 1, 3, 9, 5}, 9, 1))
-	fmt.Println(test.FindKDistantIndices([]int{2, 2, 2, 2, 2}, 2, 2))
+	fmt.Println(test.CountPairsII([]int{-1, 1, 2, 3, 1}, 2))
+	fmt.Println(test.CountPairsII([]int{-6, 2, 5, -2, -7, -1, 3}, -2))
 }
