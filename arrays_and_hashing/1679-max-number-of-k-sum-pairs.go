@@ -18,7 +18,7 @@ Example 2:
 		There are no more pairs that sum up to 6, hence a total of 1 operation.
 */
 
-package arraysandhashing
+package arrays_and_hashing
 
 func MaxOperations(nums []int, k int) int {
 	if len(nums) < 1 {

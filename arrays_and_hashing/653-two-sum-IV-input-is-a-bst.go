@@ -11,7 +11,7 @@ Example 2:
 	Output: false
 */
 
-package arraysandhashing
+package arrays_and_hashing
 
 type TreeNode struct {
 	Value int

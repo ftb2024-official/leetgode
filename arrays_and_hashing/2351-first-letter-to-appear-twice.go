@@ -18,7 +18,7 @@ Example 2:
 	Explanation: The only letter that appears twice is 'd' so we return 'd'.
 */
 
-package arraysandhashing
+package arrays_and_hashing
 
 func RepeatedCharacter(s string) byte {
 	seen := map[rune]struct{}{}

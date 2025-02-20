@@ -23,7 +23,7 @@ Constraints:
 	0 <= valueDiff <= 10^9
 */
 
-package arraysandhashing
+package arrays_and_hashing
 
 import "math"
 

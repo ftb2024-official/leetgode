@@ -12,17 +12,17 @@ Example 3:
 	Output: true
 */
 
-package arraysandhashing
+package arrays_and_hashing
 
 func ContainsDuplicate(nums []int) bool {
-	dist := make(map[int]bool, len(nums))
+	dist := make(map[int]struct{}, len(nums))
 
 	for _, num := range nums {
-		if dist[num] {
+		if _, ok := dist[num]; ok {
 			return true
 		}
 
-		dist[num] = true
+		dist[num] = struct{}{}
 	}
 
 	return false

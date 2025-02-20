@@ -13,7 +13,7 @@ Example 3:
 	Output: false
 */
 
-package arraysandhashing
+package arrays_and_hashing
 
 func ContainsNearbyDuplicate(nums []int, k int) bool {
 	hash := make(map[int]int)

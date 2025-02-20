@@ -10,7 +10,7 @@ Example 2:
 	Output: [1]
 */
 
-package arraysandhashing
+package arrays_and_hashing
 
 import (
 	"container/heap"
@@ -104,5 +104,7 @@ In Go, `type MinHeap []*Element` and `type MinHeap *[]Element` represent differe
    - The slice contains elements of type `Element`.
    - This is less common in heap implementations but could be used if you want to pass around a pointer to a slice directly instead of creating a new type.
 
-In summary, the main difference lies in how the slice is managed and accessed. With `MinHeap []*Element`, you're working directly with a slice of pointers to `Element`, while with `MinHeap *[]Element`, you're working with a pointer to a slice of `Element`. Depending on your use case and preferences, you may choose one over the other. The former is more common in heap implementations in Go.
+In summary, the main difference lies in how the slice is managed and accessed. With `MinHeap []*Element`, you're working directly with a slice
+of pointers to `Element`, while with `MinHeap *[]Element`, you're working with a pointer to a slice of `Element`. Depending on your use case and
+preferences, you may choose one over the other. The former is more common in heap implementations in Go.
 */

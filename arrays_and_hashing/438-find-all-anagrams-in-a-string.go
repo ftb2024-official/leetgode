@@ -16,7 +16,7 @@ Example 2:
 		The substring with start index = 2 is "ab", which is an anagram of "ab".
 */
 
-package arraysandhashing
+package arrays_and_hashing
 
 func equal(a, b []int) bool {
 	if len(a) != len(b) {

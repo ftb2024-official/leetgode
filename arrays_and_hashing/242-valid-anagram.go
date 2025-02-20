@@ -10,7 +10,7 @@ Example 2:
 	Output: false
 */
 
-package arraysandhashing
+package arrays_and_hashing
 
 import (
 	"sort"
@@ -66,17 +66,21 @@ func IsAnagram_3(s, t string) bool {
 		return false
 	}
 
-	var x, y rune
+	m := make(map[rune]int, len(s)+len(t))
 
 	for _, char := range s {
-		x ^= char
-		y += char * char
+		m[char]++
 	}
 
 	for _, char := range t {
-		x ^= char
-		y -= char * char
+		m[char]--
 	}
 
-	return x == 0 && y == 0
+	for _, v := range m {
+		if v != 0 {
+			return false
+		}
+	}
+
+	return true
 }

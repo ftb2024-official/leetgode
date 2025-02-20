@@ -12,7 +12,7 @@ Example 3:
 	Output: [["a"]]
 */
 
-package arraysandhashing
+package arrays_and_hashing
 
 import (
 	"sort"
@@ -42,6 +42,26 @@ func GroupAnagrams(strs []string) [][]string {
 	}
 
 	return res
+}
+
+func GroupAnagrams_2(strs []string) [][]string {
+	anagramGroups := make(map[[26]int][]string)
+
+	for _, str := range strs {
+		var count [26]int
+		for _, s := range str {
+			count[s-'a']++
+		}
+
+		anagramGroups[count] = append(anagramGroups[count], str)
+	}
+
+	result := make([][]string, 0, len(anagramGroups))
+	for _, group := range anagramGroups {
+		result = append(result, group)
+	}
+
+	return result
 }
 
 func sortString(str string) string {

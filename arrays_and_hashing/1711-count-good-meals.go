@@ -16,7 +16,7 @@ Example 2:
 	Explanation: The good meals are (1,1) with 3 ways, (1,3) with 9 ways, and (1,7) with 3 ways.
 */
 
-package arraysandhashing
+package arrays_and_hashing
 
 func CountPairs(deliciousness []int) int {
 	if len(deliciousness) < 1 {

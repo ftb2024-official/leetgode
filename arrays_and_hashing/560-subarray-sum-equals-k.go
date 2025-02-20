@@ -11,7 +11,7 @@ Example 2:
 	Output: 2
 */
 
-package arraysandhashing
+package arrays_and_hashing
 
 func SubarraySum(nums []int, k int) int {
 	answer, sum, prefixSum := 0, 0, map[int]int{0: 1}

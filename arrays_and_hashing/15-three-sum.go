@@ -23,7 +23,7 @@ Example 3:
 	Explanation: The only possible triplet sums up to 0.
 */
 
-package arraysandhashing
+package arrays_and_hashing
 
 import (
 	"sort"

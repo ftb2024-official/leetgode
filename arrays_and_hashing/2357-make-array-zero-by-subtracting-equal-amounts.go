@@ -18,7 +18,7 @@ Example 2:
 	Explanation: Each element in nums is already 0 so no operations are needed.
 */
 
-package arraysandhashing
+package arrays_and_hashing
 
 func MinimumOperations(nums []int) int {
 	bucket := make(map[int]struct{})

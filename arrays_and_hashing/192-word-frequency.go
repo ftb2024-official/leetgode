@@ -12,7 +12,7 @@ Example:
 		day 1
 */
 
-package arraysandhashing
+package arrays_and_hashing
 
 import (
 	"bufio"

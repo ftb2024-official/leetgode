@@ -25,7 +25,7 @@ Example 3:
 		- [3,`2`,1,5,`4`]
 */
 
-package arraysandhashing
+package arrays_and_hashing
 
 func CountKDifference(nums []int, k int) int {
 	if len(nums) < 2 {

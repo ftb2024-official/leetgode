@@ -21,7 +21,7 @@ Example 2:
 		Because distance[0] = 1, s is not a well-spaced string.
 */
 
-package arraysandhashing
+package arrays_and_hashing
 
 func CheckDistances(s string, distance []int) bool {
 	if len(s) < 2 || len(s) > 52 {

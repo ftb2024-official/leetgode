@@ -11,7 +11,7 @@ Example 2:
 	Output: [[2,2,2,2]]
 */
 
-package arraysandhashing
+package arrays_and_hashing
 
 import (
 	"slices"

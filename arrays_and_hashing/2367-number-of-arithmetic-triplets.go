@@ -18,7 +18,7 @@ Example 2:
 		(1, 3, 5) is an arithmetic triplet because both 9 - 7 == 2 and 7 - 5 == 2.
 */
 
-package arraysandhashing
+package arrays_and_hashing
 
 func ArithmeticTriplets(nums []int, diff int) int {
 	ans, m := 0, map[int]int{}

@@ -20,7 +20,7 @@ Example 3:
 	Explanation: The sum of -1 and 0 is -1. Therefore index1 = 1, index2 = 2. We return [1, 2].
 */
 
-package arraysandhashing
+package arrays_and_hashing
 
 func TwoSumII(numbers []int, target int) []int {
 	result := []int{}

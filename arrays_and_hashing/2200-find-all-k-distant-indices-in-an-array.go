@@ -23,7 +23,7 @@ Example 2:
 		Hence, we return [0,1,2,3,4].
 */
 
-package arraysandhashing
+package arrays_and_hashing
 
 import "slices"
 

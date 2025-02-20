@@ -20,7 +20,7 @@ Example 3:
 	content, the two subarrays are considered different because they are in different positions in the original array.
 */
 
-package arraysandhashing
+package arrays_and_hashing
 
 func FindSubarrays(nums []int) bool {
 	if len(nums) < 2 || len(nums) > 1000 {

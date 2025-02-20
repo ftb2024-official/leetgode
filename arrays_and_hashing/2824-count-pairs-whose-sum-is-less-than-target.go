@@ -27,7 +27,7 @@ Example 2:
 		- (4, 6) since 4 < 6 and nums[4] + nums[6] = -4 < target
 */
 
-package arraysandhashing
+package arrays_and_hashing
 
 import "slices"
 

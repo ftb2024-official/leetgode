@@ -30,7 +30,7 @@ Example 3:
 		- (2, 1): "1" + "1"
 */
 
-package arraysandhashing
+package arrays_and_hashing
 
 func NumOfPairs(nums []string, target string) int {
 	if len(nums) < 2 {

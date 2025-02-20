@@ -24,7 +24,7 @@ Example 2:
 	Explanation: There are no excellent pairs for this array.
 */
 
-package arraysandhashing
+package arrays_and_hashing
 
 import (
 	"math/bits"

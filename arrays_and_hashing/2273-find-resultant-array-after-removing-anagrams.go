@@ -27,7 +27,7 @@ Example 2:
 		No two adjacent strings in words are anagrams of each other, so no operations are performed.
 */
 
-package arraysandhashing
+package arrays_and_hashing
 
 import (
 	"sort"

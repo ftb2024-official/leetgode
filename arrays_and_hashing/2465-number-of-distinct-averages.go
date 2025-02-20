@@ -19,7 +19,7 @@ Example 2:
 		There is only one average to be calculated after removing 1 and 100, so we return 1.
 */
 
-package arraysandhashing
+package arrays_and_hashing
 
 import (
 	"fmt"

@@ -18,7 +18,7 @@ Example 3:
 	Explanation: There is no a single valid k, we return -1.
 */
 
-package arraysandhashing
+package arrays_and_hashing
 
 import (
 	"slices"

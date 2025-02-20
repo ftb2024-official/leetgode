@@ -23,7 +23,7 @@ Example 2:
 		Nodes 0 and 2 both have an edge score of 3. Since node 0 has a smaller index, we return 0.
 */
 
-package arraysandhashing
+package arrays_and_hashing
 
 func EdgeScore(edges []int) int {
 	ans, mx, count := 0, 0, make([]int, len(edges))
