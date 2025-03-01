@@ -16,6 +16,33 @@ Example 2:
 
 package yandex
 
-func fourSum(nums []int, target int) [][]int {
-	return nil
+import (
+	"sort"
+)
+
+func fourSum_brute_force(nums []int, target int) [][]int {
+	n := len(nums)
+	uniqueQuadruplets := make(map[[4]int]bool, n)
+	result := make([][]int, n)
+
+	sort.Ints(nums)
+
+	for a := 0; a < n-3; a++ {
+		for b := a + 1; b < n-2; b++ {
+			for c := b + 1; c < n-1; c++ {
+				for d := c + 1; d < n; d++ {
+					if nums[a]+nums[b]+nums[c]+nums[d] == target {
+						quadruplet := [4]int{nums[a], nums[b], nums[c], nums[d]}
+						uniqueQuadruplets[quadruplet] = true
+					}
+				}
+			}
+		}
+	}
+
+	for quad := range uniqueQuadruplets {
+		result = append(result, quad[:])
+	}
+
+	return result
 }
